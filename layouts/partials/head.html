@@ -14,8 +14,9 @@
     <meta property="og:image" content="{{ .Params.image }}">
     <meta property="twitter:image" content="{{ .Params.image }}" />
     {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.header_image }}">
-    <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.header_image }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.main_page_image }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}/{{
+    .Site.Params.main_page_image }}" />
     {{ end }}
 
     {{ if .Params.title }}
