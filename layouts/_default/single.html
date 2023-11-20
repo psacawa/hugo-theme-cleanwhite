@@ -37,7 +37,7 @@
                             {{ if .Params.author }}
                                 {{ .Params.author }}
                             {{ else }}
-                                    {{ .Site.Title }}
+                                    <b>{{ .Site.Params.Author }}</b>
                             {{ end }} 
                             on 
                             {{ .Date.Format "Monday, January 2, 2006" }}
