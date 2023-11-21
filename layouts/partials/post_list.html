@@ -17,6 +17,11 @@
         {{ else }}
             {{ .Summary}}
        {{ end }}
+        ―
+        {{ $numWords := .RawContent | len }}
+       <b>
+       Reading time: {{ math.Div $numWords 240 }} min.
+       </b>
         </div>
     </a>
     <p class="post-meta">
